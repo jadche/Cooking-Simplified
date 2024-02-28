@@ -17,7 +17,6 @@ https://github.com/jadche/Cooking-Simplified/assets/50412448/61bc0019-67d7-420c-
 
 ## Database Schema
 <img width="307" alt="Screenshot 2024-02-28 at 7 25 29 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/6b465241-8f4a-4839-9707-35ee7d853e65">
-Data Schema
 <img width="508" alt="Screenshot 2024-02-28 at 7 26 14 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/28837947-2357-4dfd-894f-1ce7c7f65b27">
 <img width="508" alt="Screenshot 2024-02-28 at 7 26 21 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/aeb23510-b4d5-4f3e-b056-943f3ff42aaa">
 <img width="508" alt="Screenshot 2024-02-28 at 7 26 29 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/6bdd8371-e128-42f1-acef-9e1d2d70e6ee">
@@ -90,5 +89,3 @@ def entrypoint(event, context):
 ## APK
 
 https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/build_outputs/cooking-simplified-q6gjjs/web/ittnDWLVEdOFVssuVF5v/CookingSimplified-release.apk
-
-
