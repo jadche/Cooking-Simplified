@@ -6,6 +6,20 @@ In embarking on this project, my primary goal was to explore the efficiencies af
 
 https://github.com/jadche/Cooking-Simplified/assets/50412448/61bc0019-67d7-420c-884e-c316ef405594
 
+# Table of Contents
+
+1. [Introduction](#introduction)
+2. [Video Demo](#video-demo)
+3. [Flowchart](#flowchart)
+4. [Database Schema](#database-schema)
+   - [Users Collection](#users-collection)
+   - [Recipes Collection](#recipes-collection)
+     - [Steps Subcollection](#steps-subcollection)
+     - [Ingredients Subcollection](#ingredients-subcollection)
+5. [Image Recognition](#image-recognition)
+6. [Future Updates](#future-updates)
+7. [APK](#apk)
+
 ## Flowchart
 <img width="1325" alt="Flow" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/f4bb9716-9f41-48ea-b1ff-2de63e34f6e8">
 
@@ -135,6 +149,10 @@ Using the pre-trained ImageText model, the script asks a question about the cont
 ```
 
 ## Future Updates
+
+In the pipeline for future updates, I'm excited to introduce additional features that will further enhance the user experience. One such addition will be a timer option, empowering users to effortlessly keep track of cooking times directly within the app. This feature aims to streamline the cooking process, ensuring precision and convenience for users.
+
+Additionally, I plan to implement recipe recommendations based on the user's available ingredients. Leveraging the robust capabilities of Google Cloud Platform Vertex AI, which is already integrated into the project, this functionality will provide personalized recipe suggestions tailored to each user's unique pantry items. By harnessing the power of machine learning and AI, this feature will offer users a convenient way to discover new recipes and make the most out of their ingredients. Stay tuned for these exciting updates as we continue to evolve and innovate within the app.
 
 ## APK
 
