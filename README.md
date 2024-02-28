@@ -1,24 +1,15 @@
 # CookingSimplified
 
-A new Flutter project.
-
-## Getting Started
-
-FlutterFlow projects are built to run on the Flutter _stable_ release.
-
 ## Video Demo
 
 https://github.com/jadche/Cooking-Simplified/assets/50412448/61bc0019-67d7-420c-884e-c316ef405594
-
-## Live Demo (Coming Soon)
 
 ## Flowchart
 <img width="1325" alt="Flow" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/f4bb9716-9f41-48ea-b1ff-2de63e34f6e8">
 
 ## Database Schema
-## Firebase Data Schema: Users Collection
 
-### Schema Overview
+### Users Collection
 The "users" collection in Firebase serves as the repository for user data within the application. Below is a breakdown of the fields comprising the schema:
 
 ### Fields:
@@ -35,21 +26,44 @@ The "users" collection in Firebase serves as the repository for user data within
 10. **title**: String - User's title or position.
 11. **is_admin**: Boolean - Indicates admin privileges.
 
-### Usage Notes:
-- Ensure that all mandatory fields such as email, display_name, uid, and created_time are populated during user registration to maintain data integrity.
-- The photo_url field should contain the path to the user's profile picture stored in Firebase Storage. Handle photo uploads and retrievals securely.
-- Utilize the last_active_time field to track user activity and engagement within the application.
-- The role and is_admin fields can be used to manage access control and permissions within the system.
+### Recipes Collection
+The "recipes" collection in Firebase contains data related to recipes. Here's the breakdown of the schema:
 
+### Fields:
 
-<img width="307" alt="Screenshot 2024-02-28 at 7 25 29 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/6b465241-8f4a-4839-9707-35ee7d853e65">
-The 
-<br>
+1. **name**: String - The name of the recipe.
+2. **short_description**: String - A brief description of the recipe.
+3. **long_description**: String - A detailed description of the recipe.
+4. **cook_time_min**: Integer - The cooking time in minutes.
+5. **prep_time_min**: Integer - The preparation time in minutes.
+6. **total_time_min**: Integer - The total time required to cook the recipe in minutes.
+7. **card_image**: Image Path - Path to the recipe's image for display.
+8. **details_image**: Image Path - Path to the recipe's detailed image.
+9. **ingredients**: List<String> - List of ingredients needed for the recipe.
+10. **is_favorite**: Boolean - Indicates whether the recipe is marked as a favorite.
+11. **step_count**: Integer - The number of steps or instructions in the recipe.
 
-<img width="500" alt="Screenshot 2024-02-28 at 7 26 14 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/28837947-2357-4dfd-894f-1ce7c7f65b27">
-<img width="500" alt="Screenshot 2024-02-28 at 7 26 21 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/aeb23510-b4d5-4f3e-b056-943f3ff42aaa">
-<img width="500" alt="Screenshot 2024-02-28 at 7 26 29 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/6bdd8371-e128-42f1-acef-9e1d2d70e6ee">
-<img width="500" alt="Screenshot 2024-02-28 at 7 26 38 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/09e3b2cf-85e0-4501-b9cf-55dc018a8c29">
+### Steps Subcollection
+The "steps" is a subcollection of the Recipes Collection contains data related to the steps or instructions for each recipe. Breakdown of the schema:
+
+### Fields:
+
+1. **step_no**: Integer - The step number or sequence in the recipe.
+2. **step_image**: Image Path - Path to the image associated with the step (if applicable).
+3. **step_maintext**: String - The main text or instructions for the step.
+4. **step_subtext**: String - Additional subtext or details for the step.
+5. **step_type**: Integer - Type of step (e.g., cooking, preparation, serving).
+6. **step_time_min**: Integer - Time required for completing the step in minutes.
+7. **step_color**: Color - Color representation for the step (if applicable).
+
+### Ingredients Subcollection
+The "ingredients" is another subcollection of the Recipes Collection, contains data related to ingredients used in recipes. Schema:
+
+### Fields:
+
+1. **name**: String - The name of the ingredient.
+2. **description**: String - Description or additional information about the ingredient.
+3. **image**: Image Path - Path to the image of the ingredient (if available).
 
 ## Image Recognition
 
