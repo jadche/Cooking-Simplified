@@ -16,6 +16,32 @@ https://github.com/jadche/Cooking-Simplified/assets/50412448/61bc0019-67d7-420c-
 <img width="1325" alt="Flow" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/f4bb9716-9f41-48ea-b1ff-2de63e34f6e8">
 
 ## Database Schema
+## Firebase Data Schema: Users Collection
+
+### Schema Overview
+The "users" collection in Firebase serves as the repository for user data within the application. Below is a breakdown of the fields comprising the schema:
+
+### Fields:
+
+1. **email**: String - User's email address.
+2. **display_name**: String - User's chosen display name.
+3. **photo_url**: Image Path - Path to user's profile photo.
+4. **uid**: String - Unique user identifier.
+5. **created_time**: DateTime - Timestamp of account creation.
+6. **phone_number**: String - User's phone number.
+7. **short_description**: String - User's brief bio.
+8. **last_active_time**: DateTime - Timestamp of last user activity.
+9. **role**: String - User's role or designation.
+10. **title**: String - User's title or position.
+11. **is_admin**: Boolean - Indicates admin privileges.
+
+### Usage Notes:
+- Ensure that all mandatory fields such as email, display_name, uid, and created_time are populated during user registration to maintain data integrity.
+- The photo_url field should contain the path to the user's profile picture stored in Firebase Storage. Handle photo uploads and retrievals securely.
+- Utilize the last_active_time field to track user activity and engagement within the application.
+- The role and is_admin fields can be used to manage access control and permissions within the system.
+
+
 <img width="307" alt="Screenshot 2024-02-28 at 7 25 29 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/6b465241-8f4a-4839-9707-35ee7d853e65">
 The 
 <br>
