@@ -1,5 +1,7 @@
 # CookingSimplified
 
+In embarking on this project, my primary goal was to explore the efficiencies afforded by low-code platforms such as FlutterFlow in app development. The results surpassed my expectations. Completing this project in a mere 14 days illuminated the significant time-saving potential of leveraging low-code tools. This timeframe nearly halved the typical development lifecycle for an app, all while simultaneously targeting three distinct platforms: iOS, Android, and web. FlutterFlow's utilization of Flutter technology underscores its versatility, enabling seamless deployment across multiple platforms. This experiment reinforces the profound impact that innovative low-code/no-code tools like can have on streamlining and accelerating the app development process.
+
 ## Video Demo
 
 https://github.com/jadche/Cooking-Simplified/assets/50412448/61bc0019-67d7-420c-884e-c316ef405594
@@ -131,8 +133,6 @@ Using the pre-trained ImageText model, the script asks a question about the cont
     document_reference = db.document(document_path)
     document_reference.update({'name': answers[0].capitalize()})
 ```
-
-## Conclusion
 
 ## Future Updates
 
