@@ -12,8 +12,6 @@ https://github.com/jadche/Cooking-Simplified/assets/50412448/61bc0019-67d7-420c-
 ### Users Collection
 The "users" collection in Firebase serves as the repository for user data within the application. Below is a breakdown of the fields comprising the schema:
 
-### Fields:
-
 1. **email**: String - User's email address.
 2. **display_name**: String - User's chosen display name.
 3. **photo_url**: Image Path - Path to user's profile photo.
@@ -28,8 +26,6 @@ The "users" collection in Firebase serves as the repository for user data within
 
 ### Recipes Collection
 The "recipes" collection in Firebase contains data related to recipes. Here's the breakdown of the schema:
-
-### Fields:
 
 1. **name**: String - The name of the recipe.
 2. **short_description**: String - A brief description of the recipe.
@@ -46,8 +42,6 @@ The "recipes" collection in Firebase contains data related to recipes. Here's th
 ### Steps Subcollection
 The "steps" is a subcollection of the Recipes Collection contains data related to the steps or instructions for each recipe. Breakdown of the schema:
 
-### Fields:
-
 1. **step_no**: Integer - The step number or sequence in the recipe.
 2. **step_image**: Image Path - Path to the image associated with the step (if applicable).
 3. **step_maintext**: String - The main text or instructions for the step.
@@ -58,8 +52,6 @@ The "steps" is a subcollection of the Recipes Collection contains data related t
 
 ### Ingredients Subcollection
 The "ingredients" is another subcollection of the Recipes Collection, contains data related to ingredients used in recipes. Schema:
-
-### Fields:
 
 1. **name**: String - The name of the ingredient.
 2. **description**: String - Description or additional information about the ingredient.
