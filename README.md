@@ -26,8 +26,8 @@ https://github.com/jadche/Cooking-Simplified/assets/50412448/61bc0019-67d7-420c-
 <img width="500" alt="Screenshot 2024-02-28 at 7 26 38 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/09e3b2cf-85e0-4501-b9cf-55dc018a8c29">
 
 ## Image Recognition
-<img width="571" alt="Screenshot 2024-02-28 at 6 30 44 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/79d276fc-b9a7-46a3-8ba2-8cde7fd52ff4">
-<img width="494" alt="Screenshot 2024-02-28 at 7 28 55 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/f78c365f-fe6b-45bf-90bf-cfd9091ea9ff">
+<img width="500" alt="Screenshot 2024-02-28 at 6 30 44 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/79d276fc-b9a7-46a3-8ba2-8cde7fd52ff4">
+<img width="500" alt="Screenshot 2024-02-28 at 7 28 55 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/f78c365f-fe6b-45bf-90bf-cfd9091ea9ff">
 
 ```python
 import requests
