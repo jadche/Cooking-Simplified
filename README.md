@@ -59,8 +59,8 @@ The "ingredients" is another subcollection of the Recipes Collection, contains d
 
 ## Image Recognition
 
-<img width="415" alt="Screenshot 2024-02-28 at 6 30 44 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/e8289fdc-3e4b-4521-97b9-189959b96a80">
-<img width="415" alt="Screenshot 2024-02-28 at 7 28 55 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/f78c365f-fe6b-45bf-90bf-cfd9091ea9ff">
+<img width="412" alt="Screenshot 2024-02-28 at 6 30 44 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/e8289fdc-3e4b-4521-97b9-189959b96a80">
+<img width="412" alt="Screenshot 2024-02-28 at 7 28 55 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/f78c365f-fe6b-45bf-90bf-cfd9091ea9ff">
 
 ```python
 import requests
