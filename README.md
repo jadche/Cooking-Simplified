@@ -89,4 +89,6 @@ def entrypoint(event, context):
 
 ## APK
 
+https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/build_outputs/cooking-simplified-q6gjjs/web/ittnDWLVEdOFVssuVF5v/CookingSimplified-release.apk
+
 
