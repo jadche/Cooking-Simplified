@@ -1,2 +1,7 @@
-# Cooking-Simplified
-Cooking and recipe management app built using Flutterflow, Firebase and GCP
+# CookingSimplified
+
+A new Flutter project.
+
+## Getting Started
+
+FlutterFlow projects are built to run on the Flutter _stable_ release.

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "735892953618",
+    "project_id": "cookingsimplified-f8f94",
+    "storage_bucket": "cookingsimplified-f8f94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735892953618:android:9ccd2e38ac27212e9796cb",
+        "android_client_info": {
+          "package_name": "com.mycompany.cookingsimplified"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApaQ8RmCE5F1t6nzsDAeNbsu_6Pwj89ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
