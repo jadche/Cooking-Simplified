@@ -62,12 +62,18 @@ The "ingredients" is another subcollection of the Recipes Collection, contains d
 <img width="412" alt="Screenshot 2024-02-28 at 6 30 44 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/e8289fdc-3e4b-4521-97b9-189959b96a80">
 <img width="412" alt="Screenshot 2024-02-28 at 7 28 55 AM" src="https://github.com/jadche/Cooking-Simplified/assets/50412448/f78c365f-fe6b-45bf-90bf-cfd9091ea9ff">
 
+The following Python script is designed to be deployed as a Google Cloud Function triggered by the creation of a document in the ingredients collection. We utilizes various libraries, including requests, vertexai, and google.cloud, to perform image analysis and update Firestore documents accordingly.
+
 ```python
 import requests
 import vertexai
 from google.cloud import firestore
 from vertexai.vision_models import ImageTextModel, Image
+```
 
+The script begins by initializing the necessary variables, including the Google Cloud project ID and location, and loading a pre-trained ImageText model from Vertex AI. It defines a function, download_file, to download an image from a given URL and save it locally.
+
+```python
 PROJECT_ID = 'cookingsimplified-f8f94'
 LOCATION = 'us-central1'
 
@@ -86,8 +92,12 @@ def download_file(url, filename):
         print(f"Downloaded file: {filename}")
     else:
         print(f"Failed to download file: status code {response.status_code}")
+```
+
+The entrypoint function is the main entry point for the Cloud Function. It is triggered by the creation of a Firestore document. Upon invocation, it retrieves the Firestore client and extracts the document path from the event metadata. It then retrieves the URL of the image associated with the document, downloads the image, and creates an Image object from it.
 
 
+```python
 def entrypoint(event, context):
     """Triggered by a change to a Firestore document.
     Args:
@@ -106,7 +116,11 @@ def entrypoint(event, context):
     image_path = event['value']['fields']['image']['stringValue']
     download_file(image_path, "/tmp/image.jpg")
     source_image = Image.load_from_file(location='/tmp/image.jpg')
+```
 
+Using the pre-trained ImageText model, the script asks a question about the content of the image, specifically identifying food ingredients. It then updates the Firestore document with the identified ingredient, capitalizing the answer, and setting it to the 'name' field.
+
+```python
     answers = model.ask_question(
         image=source_image,
         question="What food ingredient is this a picture of?",
